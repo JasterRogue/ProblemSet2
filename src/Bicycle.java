@@ -32,4 +32,30 @@ public class Bicycle {
     {
         return value;
     }
+
+    public Bicycle()
+    {
+        this.name = "Bike Guy";
+        this.make = "Typical Bike";
+        this.value = 0.0f;
+    }
+
+    public Bicycle(String name, String make, float value)
+    {
+        this.name = name;
+        this.make = make;
+        this.value = value;
+    }
+
+    public String toString()
+    {
+        float bike2val=getValue() + 10;
+        float total = bike2val + getValue();
+
+        return "\n\nName: " + getName() +
+                "\nBike 1 Value: " + getValue() +
+                "\nBike 2 Value: " + bike2val +
+                "\nTotal Value: " + total;
+    }
+
 }
